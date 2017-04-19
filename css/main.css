@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.header__home #main-slider {
+  min-height: 900px;
+  height: 900px;
+  overflow: hidden; }
+  .header__home #main-slider img {
+    position: absolute;
+    z-index: -1;
+    height: 900px; }
+  .header__home #main-slider .container-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px; }
+
+.main-slider__content {
+  color: white;
+  text-transform: uppercase;
+  width: 80%;
+  margin-top: 100px; }
+  .main-slider__content h2 {
+    font-size: 2.25rem;
+    font-family: "OpenSansExtraBold", sans-serif;
+    margin-bottom: 10px; }
+  .main-slider__content h3 {
+    font-size: 1.25rem;
+    font-family: "OpenSansLight", sans-serif;
+    line-height: 30px;
+    margin: 0; }
+
+.main-slider__links {
+  margin-top: 30px; }
+  .main-slider__links a {
+    display: inline-block;
+    padding: 30px 0;
+    text-align: center;
+    min-width: 215px;
+    width: auto;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 30px;
+    border: 1px solid white;
+    transition: all linear .5s; }
+    .main-slider__links a:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+
+html,
+body {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.home__section1 {
+  padding-bottom: 90px;
+  background: url("../img/general/bg-decor.png") no-repeat 93% 100px; }
+
+.link-img {
+  position: relative;
+  min-height: 700px;
+  margin-bottom: 50px; }
+  .link-img .link-img__content {
+    max-width: 250px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px; }
+    .link-img .link-img__content p {
+      font-family: "OpenSansSemiBold", sans-serif;
+      font-size: 1.410rem;
+      color: white;
+      margin-bottom: 30px; }
+    .link-img .link-img__content a {
+      background-color: rgba(0, 135, 144, 0.6);
+      color: white;
+      text-transform: uppercase;
+      padding: 22px 30px;
+      border: 1px solid white;
+      display: inline-block;
+      transition: all linear .5s; }
+      .link-img .link-img__content a:hover {
+        background-color: #008790; }
+
+.section-text .section-title {
+  font-size: 1.75rem;
+  font-family: "OpenSansBold", sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+.section-text .txt {
+  font-size: 1.125rem;
+  font-family: "OpenSansLight", sans-serif;
+  margin-bottom: 45px; }
+
+.framed {
+  margin-top: -100px;
+  width: 100%;
+  border: 10px solid #b5d5d8; }
+
+#home__section1-img1 {
+  background: url("../img/content/section1_content1.jpg") no-repeat center center;
+  background-size: cover; }
+
+.clients {
+  background-color: #f1f1f1;
+  min-height: 190px;
+  padding-top: 50px; }
+  .clients ul {
+    padding: 0;
+    margin: 0;
+    width: 108%;
+    margin-left: -2%; }
+    .clients ul li {
+      display: inline-block;
+      width: 19%; }
+      .clients ul li img {
+        display: block;
+        margin: 0 auto; }
+
+.feautures {
+  padding: 80px 0 20px; }
+
+.feautures-table {
+  display: table;
+  width: 100%;
+  margin-bottom: 50px; }
+  .feautures-table .feautures-cell {
+    display: table-cell;
+    padding-right: 23px; }
+    .feautures-table .feautures-cell:last-child {
+      padding-right: 0; }
+    .feautures-table .feautures-cell h3 {
+      position: relative;
+      font-size: 1.125rem;
+      font-family: "OpenSansBold", sans-serif;
+      height: 40px;
+      padding-left: 50px;
+      padding-bottom: 20px; }
+      .feautures-table .feautures-cell h3:before {
+        content: '';
+        position: absolute;
+        background: url("../img/icons/icon-cross.png") no-repeat;
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        left: 0; }
+    .feautures-table .feautures-cell p {
+      font-size: 0.875rem; }
+
+.officers {
+  background: url("../img/general/officers-bg.jpg") no-repeat center top;
+  background-size: cover;
+  padding: 100px 0 50px 0; }
+
+.officer-card {
+  background-color: #fff;
+  border: 1px solid #008790;
+  padding: 50px;
+  margin-top: 70px;
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 1px 2px 12px -3px #000; }
+  .officer-card img {
+    display: block;
+    margin: -100px auto 15px auto;
+    border: 1px solid #008790; }
+  .officer-card .officer-name {
+    display: block;
+    font-size: 1.375rem;
+    font-family: "OpenSansBold", sans-serif;
+    margin-bottom: 10px; }
+  .officer-card .officer-position {
+    display: block;
+    font-size: 1.125rem;
+    font-family: "OpenSansSemiBold", sans-serif;
+    color: #008790;
+    margin-bottom: 20px; }

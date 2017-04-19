@@ -1,0 +1,210 @@
+@import 'vendors/variables.scss';
+@import 'vendors/fonts.scss';
+@import 'vendors/mixin.scss';
+@import 'vendors/header.scss';
+
+
+html,
+body {
+	font-family: $regularFont;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+.home__section1 {
+	padding-bottom: 90px;
+	background: url('../img/general/bg-decor.png') no-repeat 93% 100px;
+}
+
+.link-img {
+	position: relative;
+	min-height: 700px;
+	margin-bottom: 50px;
+
+	.link-img__content {
+		max-width: 250px;
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+
+		p {
+			font-family: $semiBoldFont;
+			font-size: 1.410rem;
+			color: white;
+			margin-bottom: 30px;
+	    }
+
+	    a {
+	    	background-color: rgba(0, 135, 144, 0.6);
+	    	color: white;
+	    	text-transform: uppercase;
+	    	padding: 22px 30px;
+	    	border: 1px solid white;
+	    	display: inline-block;
+	    	transition: all linear .5s;
+
+	    	&:hover {
+	    		background-color: $mainAccentColor;
+	    	}
+	    }
+	}
+
+}
+
+
+.section-text {
+
+	.section-title {
+		font-size: 1.75rem;
+		font-family: $boldFont;
+		margin-bottom: 50px;
+		margin-top: 50px;
+
+	}
+
+	.txt {
+		font-size: 1.125rem;
+		font-family: $lightFont;
+		margin-bottom: 45px;
+	}
+}
+
+.framed {
+	margin-top: -100px;
+	width: 100%;	
+	border: 10px solid #b5d5d8;
+}
+
+#home__section1-img1 {
+	background: url('../img/content/section1_content1.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+
+.clients {
+	background-color: $lightGrey;
+	min-height: 190px;
+	padding-top: 50px;
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 108%;
+   		margin-left: -2%;
+
+		li {
+			display: inline-block;
+			width: 19%;
+
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+
+		}
+	}
+
+	
+}
+
+.feautures {
+	padding: 80px 0 20px;
+}
+
+.feautures-table {
+	display: table;
+	width: 100%;	
+	margin-bottom: 50px;
+
+	.feautures-cell {
+		display: table-cell;
+		padding-right: 23px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		h3 {
+			position: relative;
+			font-size: 1.125rem;
+			font-family: $boldFont;
+			height: 40px;
+			padding-left: 50px;
+			padding-bottom: 20px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				background: url('../img/icons/icon-cross.png') no-repeat;
+				width: 30px;
+				height: 30px;
+				top: -10px;
+				left: 0;
+
+			}
+		}
+
+		p {
+			font-size: 0.875rem;
+
+		}
+
+	}
+}
+
+.officers {
+	background: url('../img/general/officers-bg.jpg') no-repeat center top;
+	background-size: cover;
+	padding: 100px 0 50px 0;
+}
+
+.officer-card {
+
+	background-color: #fff;
+	border: 1px solid $mainAccentColor;
+	padding: 50px;
+	margin-top: 70px;
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: 1px 2px 12px -3px #000;
+
+	img {
+		display: block;
+		margin: -100px auto 15px auto;
+		border: 1px solid $mainAccentColor;
+		
+	}
+
+	.officer-name {
+		display: block;
+		font-size: 1.375rem;
+		font-family: $boldFont;
+		margin-bottom: 10px;
+	}
+
+	.officer-position {
+		display: block;
+		font-size: 1.125rem;
+		font-family: $semiBoldFont;
+		color: $mainAccentColor;
+		margin-bottom: 20px;
+	}
+
+	p {
+
+	}
+}
