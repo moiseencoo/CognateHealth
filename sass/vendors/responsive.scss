@@ -1,0 +1,31 @@
+@media screen and (max-width: 1190px) {
+
+	.feautures-table {
+		margin-bottom: 15px;
+
+		.feautures-cell {
+			display: inline-block;
+			width: 50%;
+		}
+
+	}
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+	.feautures-table {
+		margin-bottom: 15px;
+
+		.feautures-cell {
+			display: block;
+			width: 100%;
+		}
+
+	}
+
+	.news-small__blog {
+		height: auto;
+	}
+}

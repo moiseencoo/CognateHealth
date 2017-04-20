@@ -2,6 +2,7 @@
 @import 'vendors/fonts.scss';
 @import 'vendors/mixin.scss';
 @import 'vendors/header.scss';
+@import 'vendors/footer.scss';
 
 
 html,
@@ -26,6 +27,31 @@ li {
 .home__section1 {
 	padding-bottom: 90px;
 	background: url('../img/general/bg-decor.png') no-repeat 93% 100px;
+
+	.container {
+		position: relative;
+		&:before {
+			content: 'About us';
+			position: absolute;
+			left: -105px;
+			top: 80px;
+			font-family: $boldFont;
+			font-size: 24px;
+			transform: rotate(-90deg);
+			text-transform: uppercase;
+		}
+
+		&:after {
+			content: 'who we are';
+			position: absolute;
+			left: -65px;
+			top: 71px;
+			font-family: $semiBoldFont;
+			font-size: 16px;
+			transform: rotate(-90deg);
+		}
+	}
+	
 }
 
 .link-img {
@@ -97,6 +123,32 @@ li {
 	background-color: $lightGrey;
 	min-height: 190px;
 	padding-top: 50px;
+
+	.container {
+		position: relative;
+		&:before {
+			content: 'Clients';
+			position: absolute;
+			left: -105px;
+			top: -70px;
+			font-family: $boldFont;
+			font-size: 24px;
+			transform: rotate(-90deg);
+			text-transform: uppercase;
+		}
+
+		&:after {
+			content: 'some subtext goes here';
+			position: absolute;
+			left: -124px;
+			top: -20px;
+			font-family: $semiBoldFont;
+			font-size: 16px;
+			transform: rotate(-90deg);
+		}
+	}
+
+
 	ul {
 		padding: 0;
 		margin: 0;
@@ -149,7 +201,7 @@ li {
 				background: url('../img/icons/icon-cross.png') no-repeat;
 				width: 30px;
 				height: 30px;
-				top: -10px;
+				top: -8px;
 				left: 0;
 
 			}
@@ -167,6 +219,30 @@ li {
 	background: url('../img/general/officers-bg.jpg') no-repeat center top;
 	background-size: cover;
 	padding: 100px 0 50px 0;
+
+	.container {
+		position: relative;
+		&:before {
+			content: 'Head Office';
+			position: absolute;
+			left: -135px;
+			top: -105px;
+			font-family: $boldFont;
+			font-size: 24px;
+			transform: rotate(-90deg);
+			text-transform: uppercase;
+		}
+
+		&:after {
+			content: 'some subtext goes here';
+			position: absolute;
+			left: -124px;
+			top: -82px;
+			font-family: $semiBoldFont;
+			font-size: 16px;
+			transform: rotate(-90deg);
+		}
+	}
 }
 
 .officer-card {
@@ -208,3 +284,316 @@ li {
 
 	}
 }
+
+.professionals {
+	padding: 120px 0 50px 0;
+	background: url('../img/general/bg-decor.png') no-repeat 8% 70%;
+
+	.container {
+		position: relative;
+		&:before {
+			content: 'Meet the Network';
+			position: absolute;
+			left: -183px;
+			top: 50px;
+			font-family: $boldFont;
+			font-size: 24px;
+			transform: rotate(-90deg);
+			text-transform: uppercase;
+		}
+
+		&:after {
+			content: 'of professionals';
+			position: absolute;
+			left: -100px;
+			top: -5px;
+			font-family: $semiBoldFont;
+			font-size: 16px;
+			transform: rotate(-90deg);
+		}
+	}
+
+	p {
+		font-size: 1.125rem;
+	}
+
+	.professional-img {
+		position: relative;
+		overflow: hidden;		
+		width: 259px;
+		display: block;
+		margin: 0 auto;
+
+		img {
+			display: block;
+			height: auto;
+			overflow: hidden;
+			transition: all .5s ease;
+		}
+
+		.overlay {
+			position: absolute;
+			padding: 0 20px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 135, 144, 0.8);
+			overflow: hidden;
+			height: 0;
+			width: 260px;
+			transition: all .5s ease;
+
+		}
+
+		&:hover {
+			.overlay {
+				height: 100%;
+			}
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		.overlay-text {
+			color: white;
+			overflow: hidden;
+			font-size: 0.9475rem;
+			width: 220px;
+			top: 50%;
+			position: absolute;
+			transform: translateY(-70%);
+
+			span {
+				font-family: $boldFont;
+				display: block;
+			}
+
+		}
+
+		.overlay-link {
+			text-align: center;
+			bottom: 15px;
+			left: 60px;
+			position: absolute;
+
+			a {		
+
+		     	position: relative;		
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin: 3px;
+				background-color: rgba(0, 0, 0, .3);
+				transition: all .5s linear;
+
+				&:hover {
+					background-color: rgba(0, 0, 0, .6);
+				}
+			}
+
+			.twitter {
+
+				&:before {
+					content: '';
+					position: absolute;
+					background: url('../img/icons/tw.svg') no-repeat;
+					background-size: 25px 25px;
+					width: 25px;
+					height: 25px;
+					left:9px;
+					top: 9px;
+
+				}
+			}
+
+			.facebook {
+				&:before {
+					content: '';
+					position: absolute;
+					background: url('../img/icons/fb.svg') no-repeat;
+					background-size: 25px 25px;
+					width: 25px;
+					height: 25px;
+					left: 10px;
+					top: 7px;
+
+				}
+			}
+
+			.google {
+
+				&:before {
+					content: '';
+					position: absolute;
+					background: url('../img/icons/google.svg') no-repeat;
+					background-size: 25px 25px;
+					width: 25px;
+					height: 25px;
+					left: 10px;
+					top: 10px;
+
+				}
+			}
+		}
+	}
+}
+
+.professional-desc {
+
+
+	a{
+		color: $mainAccentColor;
+		font-family: $semiBoldFont;
+		font-size: 1.063rem;
+		display: block;
+		margin-top: 20px;
+	}
+
+	&:hover {
+		a {
+			color: #062033;
+		}
+	}
+
+	span {
+		color: rgba(6, 32, 51, 0.56);
+		font-size: 0.75rem;
+	}
+}
+
+#professionals-slider {
+	margin-top: 50px;
+
+}
+
+.accreditation {
+	padding: 50px 0;
+	background-color: $lightGrey;
+
+
+	p {
+		font-size: 1.25rem;
+		font-family: $lightFont;
+		padding: 30px 0;
+	}
+
+	.certificate {
+		display: block;
+		margin: 0 auto;
+		border: 10px solid #f7f7f7;
+	}
+}
+
+.news-blog__section {
+	padding: 80px 0 120px 0;
+	background: url('../img/general/bg-decor.png') no-repeat 93% 100px;
+
+	.news-img {
+		overflow: hidden;
+		position: relative;
+
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.news-img__desc {
+			position: absolute;
+			bottom: 30px;
+			left: 50px;
+
+			.news-img__title {
+				color: white;
+				text-transform: uppercase;
+				font-size: 0.9375rem;
+				margin-right: 15px;
+				display: inline-block;
+			}
+
+			.news__date {
+				color: white;
+			}
+
+		}	
+	}
+
+	.news-blog__body {
+
+		padding: 30px 50px;
+
+		.news-blog__title {
+			font-size: 1.25rem;
+			font-family: $boldFont;
+			line-height: 30px;
+			margin: 0 0 25px 0;
+		}
+
+		.news-blog__text {
+			font-family: $lightFont;
+			font-size: 0.9375rem;
+			color: #212121;
+
+			span {					
+				line-height: 24px;
+			    height: 67px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 3;
+			   -webkit-box-orient: vertical;
+			}
+			
+		}
+
+		.readMoreLink {
+			color: $mainAccentColor;
+			font-family: $boldFont;
+			font-size: 0.9375rem;
+			display: inline;
+		}
+	}
+
+	.news__date {
+		font-size: 0.8125rem;
+	}
+
+	.news__category {
+		color: $mainAccentColor;
+		text-transform: uppercase;
+		margin-right: 15px;
+		font-size: 0.9375rem;		
+	}	
+
+
+}
+
+.news-small__blog,
+.news-big__blog {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+.news-big__blog {
+	height: 685px;
+	border-bottom: 3px solid $mainAccentColor;
+
+}
+
+.news-small__blog {
+	height: 215px;	
+	border-bottom: 3px solid $mainAccentColor;
+
+	.news-blog__title {
+		    line-height: 24px;
+		    height: 30px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 1;
+		   -webkit-box-orient: vertical;
+	}
+}
+
+@import 'vendors/responsive.scss';

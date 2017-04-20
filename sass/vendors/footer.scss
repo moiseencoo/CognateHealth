@@ -1,0 +1,138 @@
+footer {
+	min-height: 475px;
+	background: url('../img/general/footer-bg.jpg') no-repeat center center;
+	background-size: cover;
+	color: white;
+
+
+	.footer-logo {
+		position: relative;
+		background-color: $mainAccentColor;
+		margin-top: -22px;
+		padding: 35px 0 25px;
+		width: 97%;
+		margin-bottom: 40px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: -538px;
+			top: 0px;
+			background-color: $mainAccentColor;
+		}
+
+		a {
+			float: left;
+			margin-right: 35px;
+			margin-top: -27px;
+		}
+		span {
+			display: block;
+			font-size: 1.625rem;
+			font-family: $boldFont;
+			text-transform: uppercase;
+			line-height: 27px;
+		}
+	}
+
+	p {
+		margin-bottom: 30px;
+		font-size: 0.9375rem;
+	}
+}
+
+.footer-contact {
+	padding: 0;
+	padding-top: 80px;
+
+	li {
+		display: inline-block;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-family: $boldFont;
+		padding-bottom: 15px;
+		text-decoration: underline;
+
+		.footer-contact__sublist {
+			padding: 0;
+
+			li {
+				position: relative;
+				font-size: 1rem;
+				text-transform: none;
+				border-bottom: none;
+				font-family: $regularFont;
+				padding: 0;
+				padding-left: 15px;
+				text-decoration: none;
+				display: block;
+				text-decoration: none;
+				margin-top: 25px;
+
+				a {
+					color: white;
+					text-decoration: none;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: -15px;
+					top: 0;
+				}
+			}
+		}
+
+		.footer-contact__sublist2 {
+			li {
+				font-size: 1rem;
+				text-transform: none;
+				border: none;
+				font-family: $regularFont;
+				display: block;
+				a {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.footer-contact__sublist-mail {
+	&:before {
+		background: url('../img/icons/mail.png') no-repeat;
+		width: 17px;
+		height: 13px;
+
+	}
+}
+
+.footer-contact__sublist-phone {
+	&:before {
+		background: url('../img/icons/phone.png') no-repeat;
+		width: 17px;
+		height: 17px;
+
+	}
+}
+
+.footer-contact__sublist-address {
+	&:before {
+		background: url('../img/icons/map.png') no-repeat;
+		width: 19px;
+		height: 19px;
+
+	}
+}
+
+.footer-contact__sublist-in {
+	&:before {
+		background: url('../img/icons/in.png') no-repeat;
+		width: 14px;
+		height: 14px;
+
+	}
+}

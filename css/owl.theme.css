@@ -58,6 +58,23 @@
 	background-color: #fff;
 }
 
+#officers-slider .owl-pagination {
+	margin-top: 50px;
+}
+
+#officers-slider .owl-controls .owl-page span{
+	background-color: #fff;
+	border: 2px solid #6bc9d2;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 10px;
+}
+
+#officers-slider .owl-controls .owl-page.active span,
+#officers-slider .owl-controls.clickable .owl-page:hover span{
+	background-color: #006d78;
+}
+
 
 .owl-theme .owl-controls .owl-buttons div{
 	position: absolute;
