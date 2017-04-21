@@ -39,10 +39,41 @@ $('#officers-slider').owlCarousel( {
 $('#professionals-slider').owlCarousel({
 	items: 4, 
 	pagination: false,
-	navigation: true,
+	navigation: true,	
+	navigationText: false,
 	mouseDrag: true,
 	itemsDesktop : [1199,3],
     itemsDesktopSmall : [980,2],
     itemsTablet: [768,1],
     itemsMobile : [479,1]
 });
+
+$('#search-icon').click(function(){
+
+	var hiddenInput = $('.hidden-search-input');
+
+	if (hiddenInput.hasClass('active')) {
+
+		hiddenInput.css('width', '0px');
+		hiddenInput.removeClass('active');
+
+	} else {
+
+		hiddenInput.css('width', 'auto');
+		hiddenInput.addClass('active');
+
+	}
+
+		
+
+});
+
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}

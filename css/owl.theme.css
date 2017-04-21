@@ -83,18 +83,76 @@
 	background-color: transparent;
 	width: 30px;
 	height: 30px;
-	border: 2px solid #017782;
+	border: 1px solid #017782;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+	background-color: #017782;
 }
 
 .owl-theme .owl-controls .owl-next {
-	right: -100px;
-	background: url('../img/icons/next.png') no-repeat;
+	right: -100px;	
 
+}
+
+.owl-theme .owl-controls .owl-next:before {
+	content: '';
+	background: url('../img/icons/next.png') no-repeat;
+	width: 33px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	left: -13px;
+
+}
+
+.owl-theme .owl-controls .owl-next:hover 
+.owl-theme .owl-controls .owl-next:before {
+	background: url('../img/icons/next-active.png') no-repeat;
 }
 
 
 .owl-theme .owl-controls .owl-prev {
 	left: -100px;
+}
+
+#professionals-slider .owl-controls .owl-buttons div {
+	top: 35%;
+}
+
+@media screen and (max-width: 1199px) {
+
+	.owl-theme .owl-controls .owl-prev {
+		left: -60px;
+	}
+
+	.owl-theme .owl-controls .owl-next {
+		right: -60px;	
+
+	}
+}
+@media screen and (max-width: 450px) {
+	#main-slider .owl-pagination {
+		right: 15px;
+	}
+}
+
+
+
+.owl-theme .owl-controls .owl-prev:before {
+	content: '';
+	background: url('../img/icons/prev.png') no-repeat;
+	width: 33px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+
+}
+
+.owl-theme .owl-controls .owl-prev:hover 
+.owl-theme .owl-controls .owl-prev:before {
+	background: url('../img/icons/prev-active.png') no-repeat;
 }
 
 

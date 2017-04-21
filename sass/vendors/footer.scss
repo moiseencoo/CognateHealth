@@ -12,6 +12,7 @@ footer {
 		padding: 35px 0 25px;
 		width: 97%;
 		margin-bottom: 40px;
+		box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, .5);
 
 		&:before {
 			content: '';
@@ -21,6 +22,7 @@ footer {
 			left: -538px;
 			top: 0px;
 			background-color: $mainAccentColor;
+			box-shadow: -5px 0px 14px 0px rgba(0, 0, 0, .5);
 		}
 
 		a {
@@ -46,52 +48,75 @@ footer {
 .footer-contact {
 	padding: 0;
 	padding-top: 80px;
+	width: 46%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
 
-	li {
-		display: inline-block;
+	&:last-child {
+		margin-right: 0;
+	}
+
+	h2 {
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-family: $boldFont;
 		padding-bottom: 15px;
-		text-decoration: underline;
+		border-bottom: 2px solid white;
+		display: inline-block;
+	}
 
-		.footer-contact__sublist {
+	.footer-contact__sublist {
+		padding: 0;
+		padding-left: 15px;
+		margin-top: 10px;
+
+		li {
+			position: relative;
+			font-size: 1rem;
+			text-transform: none;
+			border-bottom: none;
+			font-family: $regularFont;
 			padding: 0;
+			padding-left: 15px;
+			text-decoration: none !important;
+			display: block;
+			margin-top: 20px;
 
-			li {
-				position: relative;
-				font-size: 1rem;
-				text-transform: none;
-				border-bottom: none;
-				font-family: $regularFont;
-				padding: 0;
-				padding-left: 15px;
+			width: 100%;
+
+
+			a {
+				color: white;
 				text-decoration: none;
-				display: block;
-				text-decoration: none;
-				margin-top: 25px;
+			}
 
-				a {
-					color: white;
-					text-decoration: none;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					left: -15px;
-					top: 0;
-				}
+			&:before {
+				content: '';
+				position: absolute;
+				left: -15px;
+				top: 0;
 			}
 		}
+	}
 
 		.footer-contact__sublist2 {
+
+			padding: 0;
+			margin-top: 10px;
+
 			li {
 				font-size: 1rem;
 				text-transform: none;
 				border: none;
 				font-family: $regularFont;
 				display: block;
+				padding: 0;
+				width: 100%;
+				margin-bottom: 17px;
+
+			
+
 				a {
 					color: white;
 					text-decoration: none;
@@ -99,7 +124,7 @@ footer {
 			}
 		}
 	}
-}
+
 
 .footer-contact__sublist-mail {
 	&:before {
@@ -135,4 +160,14 @@ footer {
 		height: 14px;
 
 	}
+}
+
+.copyrights {
+	text-align: center;
+	color: white;
+	font-size: 0.875rem;
+	padding: 40px 0 30px;
+	width: 100%;
+	border-top: 2px solid white;
+	margin-top: 20px;
 }

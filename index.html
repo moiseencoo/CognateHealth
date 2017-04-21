@@ -17,11 +17,54 @@
 
     </head>
     <body>
+    <div class="wrapper">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
     <header class="header__home">
+    
+      <div class="container container-nav">
+
+         <div class="header-nav">
+
+          <div class="header-logo">
+            <a href="index.html"><img src="img/general/logo.png" alt=""></a>
+          </div>
+    
+
+          <a href="javascript:void(0)" class="openMenu" onclick="openNav()"><img src="img/icons/menu.svg" alt="" width="25" height="25"></a>
+
+          <div class="header-search">
+            <img src="img/icons/search.png" alt="" width="18" height="18"  id="search-icon">
+            <div class="hidden-search-input">
+
+              <input type="text" class="search-input" placeholder="Search ...">
+
+            </div>
+          </div>
+
+          
+          
+          <div class="mobile-menu-overlay" id="myNav">
+            
+            <a href="javascript:void(0)" class="closeMenu" onclick="closeNav()"><img src="img/icons/close.svg" alt=""  width="25" height="25"></a>
+
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Our organisation</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+           </div>
+
+        </div>
+
+      </div>
 
       <div class="owl-carousel" id="main-slider">
 
@@ -90,10 +133,16 @@
 
     <section class="home__section1">
       <div class="container">
+
+      <div class="section-description">
+        <h2>Abouts us</h2>
+        <span>who we are</span>
+      </div>
+
       <div class="row">
       <div class="col-md-6">
 
-        <div class="link-img framed" id="home__section1-img1">
+        <div class="link-img" id="home__section1-img1">
 
           <div class="link-img__content">    
 
@@ -164,6 +213,11 @@
 
     <section class="clients">
       <div class="container">
+
+      <div class="section-description">
+        <h2>Clients</h2>
+        <span>some subtext goes here</span>
+      </div>
         
         <ul>
           <li><img src="img/general/client1.jpg" alt=""></li>
@@ -178,7 +232,6 @@
 
     <section class="feautures">
       <div class="container">
-        
         <div class="feautures-table">
 
           <div class="feautures-cell">
@@ -271,6 +324,12 @@
 
     <section class="officers">
       <div class="container">
+
+      <div class="section-description">
+        <h2>Head office</h2>
+        <span>some subtext goes here</span>
+      </div>
+
         <div id="officers-slider" class="owl-carousel">
           
             <div>
@@ -380,6 +439,11 @@
 
     <section class="professionals">
       <div class="container">
+
+      <div class="section-description">
+        <h2>Meet the network</h2>
+        <span>of professionals</span>
+      </div>
         <p class="text-center">
           Cognate Health’s team of medical and industry experts have been collaborating with clients nationwide for over 20 years. We provide a complete nationwide network so that patients can be seen anywhere. Our extended physician network means that no matter where our clients are in Ireland, we’re with them every step of the way to provide them with expert occupational health solutions.
         </p>
@@ -498,6 +562,12 @@
 
     <section class="accreditation">
       <div class="container">
+
+      <div class="section-description">
+        <h2>Accreditation</h2>
+        <span>Internationally Trusted!</span>
+      </div>
+
         <div class="col-md-8">
           <p>ISO 9001 is the world’s foremost quality management standard and a standard that we have implemented at Cognate Health. Our ISO 9001 certification ensures that the needs of every Cognate Health client are being met to the highest possible standards all over Ireland. Our clients can expect decisive & confidential medical advice on how to best optimise the health of their most important asset, their employees.</p>
         </div>
@@ -511,11 +581,17 @@
 
       <div class="container">
 
+      <div class="section-description">
+        <h2>News/Blog</h2>
+        <span>subtitle goes here</span>
+      </div>
+
         <div class="col-md-6">
           <div class="news-big__blog">
 
             <div class="news-img">
-            <img src="img/content/blank-big-img.jpg" alt="" width="555" height="444">
+              
+                <img src="img/content/blank-big-img.jpg" alt="" width="555" height="444">
 
               <div class="news-img__desc">                
                 <a href="#" class="news-img__title">Medical News</a>
@@ -528,8 +604,9 @@
                 development. 
               </h3>
               <p class="news-blog__text">
-                <span>Innovativeness is the pledge of our stable development. We tap into the most successful international projects, setting new standards. </span>  <a href="#" class="readMoreLink"> Read Full Article »</a>
+               Innovativeness is the pledge of our stable development. We tap into the most successful international projects, setting new standards.  
               </p>
+              <a href="#" class="readMoreLink"> Read Full Article »</a>
             </div>
               
           </div>
@@ -615,9 +692,8 @@
             </div>
             <div class="col-md-6">
               
-              <ul class="footer-contact">
-                <li>
-                  Contact Us
+              <div class="footer-contact">
+                  <h2> Contact Us </h2>
 
                     <ul class="footer-contact__sublist">
                       <li class="footer-contact__sublist-mail">
@@ -636,10 +712,10 @@
                         <a href="#">cognatehealth</a>
                       </li>
                     </ul>
-                </li>
+                </div>
 
-                <li>
-                  Useful Links 
+                 <div class="footer-contact">
+                  <h2> Useful Links </h2>
 
                     <ul class="footer-contact__sublist2">
                       <li><a href="#">> Careers</a></li>
@@ -649,16 +725,20 @@
                       <li><a href="#">> Case Management</a></li>
                       <li><a href="#">> Occupational Health Nurses</a></li>
                     </ul>  
-                </li>
-              </ul>
+                </div>
 
             </div>
+         </div>
+         <div class="row">
+           <div class="col-md-12">
+             <p class="copyrights">All rights reserved. Copyright &copy; 2017 Cognate Health </p>
+           </div>
          </div>
       </div>
       
     </footer>
       
-
+</div> <!-- /.wrapper -->
 
        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
