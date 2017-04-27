@@ -120,17 +120,7 @@
 	top: 35%;
 }
 
-@media screen and (max-width: 1199px) {
 
-	.owl-theme .owl-controls .owl-prev {
-		left: -60px;
-	}
-
-	.owl-theme .owl-controls .owl-next {
-		right: -60px;	
-
-	}
-}
 @media screen and (max-width: 450px) {
 	#main-slider .owl-pagination {
 		right: 15px;
