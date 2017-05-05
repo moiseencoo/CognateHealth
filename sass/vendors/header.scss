@@ -2,13 +2,62 @@
 	position: relative;
 }
 
+.mainColorBg {
+	background-color: rgba(0, 135, 144, 0.97) !important;
+	height: 80px;
+	top: 0 !important;
+	transition: all .3s;
+	
+	.header-logo {
+
+		img {
+			height: 100px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+	}
+	.header-search {
+		.hidden-search-input {
+			.search-input{
+				background-color: rgba(0, 135, 144, 0.8);
+			}
+		}
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -500px;
+		width: 500px;
+		height: 80px;
+		background-color: rgba(0, 135, 144, 0.97);
+
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -500px;
+		width: 500px;
+		height: 80px;
+		background-color: rgba(0, 135, 144, 0.97);
+
+	}
+		
+
+}
+
 .header-nav {
-	position: absolute;
+	position: fixed;
 	z-index: 9999;
 	top: 30px;
-	left: 15px;
+	left: 50%;
+	transform: translateX(-50%);
 	right: 0;
-	width: 100%;
+	width: 1170px;
+	background-color: transparent;
 
 	.header-logo {
 		display: inline-block;

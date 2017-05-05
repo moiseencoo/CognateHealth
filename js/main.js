@@ -22,6 +22,7 @@ $('#officers-slider').owlCarousel( {
 	      paginationNumbers: false,
 	      mouseDrag : true,
           touchDrag : true,
+		  autoplay: true,
 	 
 	    // Responsive
 		  items : 2,
@@ -39,6 +40,7 @@ $('#officers-slider').owlCarousel( {
 $('#professionals-slider').owlCarousel({
 	items: 4, 
 	pagination: false,
+	autoplay: true,
 	navigation: true,	
 	navigationText: false,
 	mouseDrag: true,
@@ -70,10 +72,22 @@ $('#search-icon').click(function(){
 
 /* Open when someone clicks on the span element */
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "105vw";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+/* Fixed Navbar Add Class on Scroll */
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".header-nav").addClass("mainColorBg");
+    } else {
+        $(".header-nav").removeClass("mainColorBg");
+    }
+});

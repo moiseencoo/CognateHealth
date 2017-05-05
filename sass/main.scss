@@ -1,9 +1,5 @@
 @import 'vendors/variables.scss';
 @import 'vendors/fonts.scss';
-@import 'vendors/mixin.scss';
-@import 'vendors/header.scss';
-@import 'vendors/footer.scss';
-
 
 html,
 body {
@@ -27,6 +23,10 @@ li {
 .wrapper {
 	overflow: hidden;
 }
+
+@import 'vendors/mixin.scss';
+@import 'vendors/header.scss';
+@import 'vendors/footer.scss';
 
 .section-description {
 	position: absolute;
@@ -587,4 +587,16 @@ li {
 	left: 0;
 }
 
+.page-section {
+	margin-bottom: 90px;
+}
+///////////////////////////////////////////
+// About Page
+///////////////////////////////////////////
+@import 'pages/about.scss';
+
+
+///////////////////////////////////////////
+// Media Queries
+///////////////////////////////////////////
 @import 'vendors/responsive.scss';
